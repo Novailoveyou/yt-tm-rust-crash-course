@@ -4,4 +4,17 @@ pub fn run() {
 
   // Basic Formatting
   println!("{} is from {}", "Nova", "other side");
+
+  // Positional Arguments
+  println!(
+    "{0} is from {1} and {0} likes to {2}",
+    "Nova", "other side", "code"
+  );
+
+  // Named Arguments
+  println!(
+    "{name} likes to play {activity}",
+    name = "John",
+    activity = "Baseball"
+  );
 }
