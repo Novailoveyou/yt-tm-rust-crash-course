@@ -54,6 +54,36 @@ Run compiled executable
 ./hello
 ```
 
+Init project with Cargo (create new project in a folder named *hello*)
+
+```zsh
+cargo new hello
+```
+
+Init project with Cargo in current folder
+
+```zsh
+cargo init
+```
+
+Compile and run project with Cargo
+
+```zsh
+cargo run
+```
+
+Compile project with Cargo
+
+```zsh
+cargo build
+```
+
+Build project with Cargo for production
+
+```zsh
+cargo build --release
+```
+
 ## Things I learned
 
 ### Rust CLI Utils
@@ -63,3 +93,11 @@ Run compiled executable
 `rustc` - compiler
 
 `cargo` - package manager
+
+### Path to executable named *filename* compiled with Cargo
+
+./target/debug/filename
+
+### Path to production file named *filename* built with Cargo
+
+./target/release/filename
