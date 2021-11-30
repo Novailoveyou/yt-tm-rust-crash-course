@@ -1,4 +1,7 @@
 pub fn run() {
   // Print to console
-  print!("Hello from the print.rs file");
+  println!("Hello from the print.rs file");
+
+  // Basic Formatting
+  println!("{} is from {}", "Nova", "other side");
 }
