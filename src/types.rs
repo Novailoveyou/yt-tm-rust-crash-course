@@ -25,7 +25,7 @@ pub fn run() {
   println!("Max i64: {}", std::i64::MAX);
 
   // Boolean
-  let is_active = true;
+  let is_active: bool = true;
 
   println!("{:?}", (x, y, z, is_active));
 }
