@@ -26,5 +26,8 @@ pub fn run() {
   // Contains
   println!("Contains 'World' {}", hello.contains("World"));
 
+  // Replace
+  println!("Replace: {}", hello.replace("World", "There"));
+
   println!("{}", hello);
 }
