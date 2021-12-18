@@ -6,10 +6,16 @@ pub fn run() {
   let hello_prim = "Hello";
 
   // String
-  let hello = String::from("Hello");
+  let mut hello = String::from("Hello ");
 
   // Get length
   println!("Length: {}", hello.len());
 
-  println!("{}", hello)
+  // Push char
+  hello.push('W');
+
+  // Push string
+  hello.push_str("orld!");
+
+  println!("{}", hello);
 }
