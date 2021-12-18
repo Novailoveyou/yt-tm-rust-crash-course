@@ -17,5 +17,14 @@ pub fn run() {
   // Push string
   hello.push_str("orld!");
 
+  // Capacity in bytes
+  println!("Capacity: {}", hello.capacity());
+
+  // Check if empty
+  println!("Is Empty: {}", hello.is_empty());
+
+  // Contains
+  println!("Contains 'World' {}", hello.contains("World"));
+
   println!("{}", hello);
 }
