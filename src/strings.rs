@@ -29,5 +29,10 @@ pub fn run() {
   // Replace
   println!("Replace: {}", hello.replace("World", "There"));
 
+  // Loop through string by whitespace
+  for word in hello.split_whitespace() {
+    println!("{}", word);
+  }
+
   println!("{}", hello);
 }
