@@ -12,5 +12,8 @@ pub fn run() {
   println!("Single Value: {}", numbers[0]);
 
   // Get array length
-  println!("Array Length: {}", numbers.len())
+  println!("Array Length: {}", numbers.len());
+
+  // Arrays are stack allocated
+  println!("Array occupies {} bytes", std::mem::size_of_val(&numbers));
 }
