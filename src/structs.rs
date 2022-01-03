@@ -33,6 +33,11 @@ impl Person {
   fn set_last_name(&mut self, last: &str) {
     self.last_name = last.to_string();
   }
+
+  // Name to tuple
+  fn to_tuple(self) -> (String, String) {
+    (self.first_name, self.last_name)
+  }
 }
 
 pub fn run() {
@@ -56,4 +61,5 @@ pub fn run() {
   println!("Person {}", p.full_name());
   p.set_last_name("Williams");
   println!("Person {}", p.full_name());
+  println!("Person Tuple {:?}", p.to_tuple());
 }
